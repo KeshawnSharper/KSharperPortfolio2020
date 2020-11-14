@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keshawn Sharper Portfolio</title>
+        <link rel = "stylesheet" href = "index.css">
+        <meta name = "viewport" content="width = device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+    <!-- jQuery Version 1.11.0 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script> 
+<!-- <link rel="stylesheet" href="index.css"> -->
+<!-- Script -->
+<script src="https://use.fontawesome.com/8a3ff5c750.js"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    </head>
+<body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#" style="color:#1ee2e7;">Keshawn Sharper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#services" style="color:#1ee2e7;">Skills <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio" style="color:#1ee2e7;">Projects <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#about" style="color:#1ee2e7;">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#contact" style="color:#1ee2e7;">Contact <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+</nav>
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Hello</div>
+                <div class="intro-heading">Welcome to my portfolio</div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Skills</h2>
+                  
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img src="data:image/png;base64,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" 
+                                 />
+                        </span>
+                        <h4 class="service-heading">ReactJs (Redux)</h4>
+                        <p class="text-muted">ReactJs is an open-source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+    <!--                         <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
+                            <img src="data:image/png;base64,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"/>
+                        </span>
+                        <h4 class="service-heading">AngularJs</h4>
+                        <p class="text-muted">AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                          
+                            <img class="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAnCAYAAAC/mE48AAAIzUlEQVRoQ+2aDWxT1xXH/+e+Z5M4Cd8CxDdlVAiWkcQmULWiaatuqCqsDKWsU1ccEgiFAuFz3Qo0fKyDwkqaERI+gsMKWku6tZRVAoYI29rSLO852yis3ShaYRPjQ5DGgSS23z3TMzYYx4aEfCAoN4pkvXfOO/f+7v+ec/Icwjd80N2yfofD8TaAiiFDhmwrLy832mredw0Au93+VwCjABwHsETX9Q/bAsLdCCC07nm6rhe2FsLdDGCtrusv3wfQSgL3FdBKgB3mHpYEQzHvH4F2zwFpaWljAXynoaGh7Pjx496WbveTr2ekCKJ++xdX3FbJSk9Pf1BKSZqmfXE7CrDb7Y9JKT3V1dVarLlHzQGjRo3qp6rqWgA/AmDa/IuZF7rd7r3NgfDExvQeSWrCroRu6vcaGyTqLsnPG4FnKvIqvmiOf3Jycjer1bpCSvmiGV8IsRXARAB9w/xjHoGUlJRhiqK8AeBpAAzgLQAv67p+JjL+DQAyMjLiPB7PYgA/AZAQZbL7mXm+2+3+R7SFZO7OVLxfn1/dpae6RJAQfi/D52M01MmAubcR717E5ezKuZW1Uf0zM5WTJ0/mSilXCiF63AJWEwBjxozp7Pf7lwGYC8Aa4V8HYHV9ff2GcDVfA2C32zMBrAMw6GaBpZR+IUSx1+t99ejRo5dCtk8XPzqpWy/LDluSmmT4GebiQwB8jQzzV1HJlJO/vk4u35dXsQYU2J3ACMr1TSFEcnNUAiAcgHA4HFmGYfxcCNH7Fv4niGihpmkfmHYBAA6H40lmPtDMwAEzIvqdpmmTzc+Pv/HIhEHDbB/E2xQYBiMSgAnCW88gASgWgqIQai4YGw4uqlhg+qelpU0noi0tiR8OwG63LwewoiX+zPxjt9u9MwDAbrc/A+C9yAcwczUR/U1K+bwQQo24v1/X9fHmtYzCsU5bnMU1eGhiTACmAqRxVQWGZFy+ZGyu+NmfZgYBrCaiVyLjSyk/F0IIAA9GWdw1Bdjt9gIA8yJtiGgfM/cBkBJlbeZRLggp4PvM/H6E0Wxd10sAyNTU1BFCCPP+sDCb6wCKxjrJgKtf/0QkJKpRFWAC8DYyLBbClcsGpI9jApBS1gshfpqUlFTk8XjMOc6RUq4WQsSHxY8JQEp5loicD81NveJvaPy6asvxMcy8SQihBP2ZmSe73e73YgJISkqKP3z4cEPYGS0DMDUqgOLRTpLCZVEVDB7cObDT4TkgkAuCAAxDwu+TAPHmiiUfxVLAMV3Xvx2+IXa7/TMAI5sDAMB+x0upvxTgA5AwAB756cbqj83EahhGpaqqczVN+0t4DmiigBYBKE1zwi9caLSgV/cEdO6uxATga5Qwf4D2BTB2Tspr0sAhCfKyIpKr3qzaoSjKZk3TdgZL49VcFkyCE5l5TzjxFgH4dYoTPuGiC4lQhMDA4VZIA9eqQLgCmgmgRgiRWVVVdTCYo74L4B0AXZupgPPMnPvQXPs/WfprN01znY6VINsGwK5kJ2psLqqNC8Tp2ktFlx5XVWD2AU0AGIBUfNv/uOST7JslQQB7iEgw84TbSYIADgHI03X96E0BpKWlTSCiQF0Mjv/quj7QTIChCw6HI5+ZX42WA8btHjlROdljD/hqW0EE9B1qDfRgsQDA4nunYtEnPwzusNl4rYk1yWjXmfkVt9v9WtB/KYBV0eyklEawk1ym6/qFSJvAjMMAmP1+oaqqqyorm3ZrZrmUUq4XQgw1E02oDJrPGLcr+SlxwbaLrsQFZJrQRUHXnkoTAN4Gv48tcl3F/I+XhhqhjIwM1ePxmG2vWcu73QJEDTOvIKIiXdd9QVtyOBzPM/MvAPSL4V9DRMs0TdsYfj8AIDU1dZwQYgEzL3K73SduNoERI0ZYbTZbHoChmqbl3mCbDzFuSMoyOmdbJvwWpVd/CyCu5gJvo0Sd9O67MvjslMqnTkRthdPT080svVJKmRtWsgIhzJ0kom1EtDTaTgaVYDPbeCnl4oiSad6uAbBc1/VfNQHQEuk1x/aRXcndlPpOO+IvJ07o0lNFbWPtlz4yJh3Mun4WZ5dNHykh8wj86Xmbp6z82etveh0Oh1kCC5j5CTMeM1eYZ9ntdv+9OfFHjx49wO/3rxFCPBds3TdZrdaVR44cuRj1CDTnobdj8/C7I0bGG52GH5xS/duQf/a27O5WonxATmEhNgAYT8ydQTSvOGvbn8PjmEfT7AQ1TbuhQjV3Lg6HI5WZa3Vd/zKWT4e9EsvPz1fPDTo9A5DLWSq7vcz5pTmlF8GgWa6cyX7i9SpTJUleUpRT+lVzF9lauw4BMLMs+2EwFYNwVgHlFTm3Houc+PzdmfENdZ0XSkaeIBT1PjVg1ZkBp1JIwQNxLA8UZJWZZ7jNR4cAyHVlnyLiRSVTt5eH/wlsrmb2jhd6+BCXgAac2ZK7xTdna05/L/FeRcFyKViFpEQYqC7JKTVb4TYfHQOgNPtCvDC+Ze6i0+WMiyc6bTRaBqlW3/sSIoUM1EpCV1J4Volz++5ZrpydEvx7KJZDqtHQe6Oz7LNIcG1F4o4A6ASqEYImGcyFl2x1w80KMGvHtMeYqbDYWZocAlCSVWp+H9iu444BIGEMZb9FY0XWqVI5yoKPCYi3zfzwjQCgMIYxkw1C9ALzAyAeDXCW4bX0Va2yyDwC97YCWMwjSKdqKJmojz/v63JlFEn5URBAwT0PwOpJ7OJPql8DNn4AEt1A+AqS1hZP27bzRVfWLobYe88oYKYr57BgnDWbHCHkFT/h38VZriav3c1m6X8D/zOdWOazSuNLppZWt2sGDL0Qae8ggdLHynwIuUAawnw5/Ifi7NLnwuPO3J7zOAgFDD4DlvM3T3OZ/wjR7qNDqkBoFTM2z7ApFn8fhhhMxH2KnaW/eemtnMGGYawHRDKzWFCStfXD9qr50Wh2KIDQBGa5po9m9hcaTDYF6ENE684n1haWP1ve4u8fWyuROwLAnHR+fr44N+TUo5Ksx0peKDnX2oXcrv//AWljBXN5nzKYAAAAAElFTkSuQmCC"/>
+    
+                        </span>
+                        <h4 class="service-heading">NodeJs</h4>
+                        <p class="text-muted">Node. js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.</p> 
+    
+    <!--                   <h4 class="service-heading">Waterfall maybe?</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> --> 
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div id="project2" data-toggle="modal" data-target="#modal0001">
+                                    <div class="portfolio-hover">
+                                    <img src="./beach.png" width="350" height="250"/>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Atlantic City</h4>
+                            <p class="text-muted">Html/Css/JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div id="project2" data-toggle="modal" data-target="#modal001">
+                                    <div class="portfolio-hover">
+                                    <img src="./HouseofHouses.png" width="350" height="250"/>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>House of Houses</h4>
+                            <p class="text-muted">ReactJs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div id="project2" data-toggle="modal" data-target="#modal002">
+                                    <div class="portfolio-hover">
+                                    <img src="./FlappyBird.png" width="350" height="250"/>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Flappy Bird</h4>
+                            <p class="text-muted">ReactJs</p>
+                        </div>
+                    </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-hover">
+                    <div id="project1" data-toggle="modal" data-target="#modal1">
+                        
+                                    
+                                    
+                                
+
+                            <img src="./Bookface.jpg" width="350" height="250"/>
+</div>
+</div>
+
+                    <div class="portfolio-caption">
+                        <h4>Bookface</h4>
+                        <p class="text-muted">AngularJs/NodeJs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div id="project2" data-toggle="modal" data-target="#modal2">
+                            <div class="portfolio-hover">
+                            <img src="./AngularTodoList.png" width="350" height="250"/>
+                    </div>
+                </div>
+                    <div class="portfolio-caption">
+                        <h4>Angular Todo List</h4>
+                        <p class="text-muted">AngularJs/NodeJs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div id="project2" data-toggle="modal" data-target="#modal3">
+                                <div class="portfolio-hover">
+                                <img src="./AfricanMarketplace.png" width="350" height="250"/>
+                        </div>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>African Marketplace</h4>
+                        <p class="text-muted">ReactJs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div id="project2" data-toggle="modal" data-target="#modal4">
+                                <div class="portfolio-hover">
+                                <img src="./BudgetBlocks.png" width="350" height="250"/>
+                        </div>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>Budget Blocks</h4>
+                        <p class="text-muted">ReactJs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div id="project2" data-toggle="modal" data-target="#modal5">
+                                <div class="portfolio-hover">
+                                <img src="./RefugeeStories.png" width="350" height="250"/>
+                        </div>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>Refugee Stories</h4>
+                        <p class="text-muted">Html/Css/JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div id="project2" data-toggle="modal" data-target="#modal6">
+                                <div class="portfolio-hover">
+                                <img src="./RickMortyFanPage.png" width="350" height="250"/>
+                        </div>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>Rick & Morty Fan Page</h4>
+                        <p class="text-muted">ReactJs</p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2013-2017</h4>
+                                    <h4 class="subheading">Graduated from Marina Bracetti Academy High school</h4>
+                                </div>
+                                <div class="timeline-body">
+                         Mariana Bracetti Academy Charter School is a publicly funded K-12 charter school and free to attend. Students from Pennsylvania may apply with preference given to siblings of current students and residents of Philadelphia.          
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2018</h4>
+                                    <h4 class="subheading">Attended Independence university for Software and Mobile Applications Development (BS)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Independence University is part of the Center for Excellence in Higher Education—a family of nonprofit colleges and universities with educational roots dating back to 1891. Today, IU specializes in personalized online education. The university is comprised of four schools: the School of Healthcare, the School of Business, the School of Technology, and the School of Graphic Arts.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>May 2019-20</h4>
+                                    <h4 class="subheading">Finished Lambda Coding Bootcamp for Web Development</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">9-month program with an intense, fast-paced curriculum that teaches full-stack web development with an added emphasis on computer science fundamentals.</p>
+                                </div>
+                            </div>
+                        </li>
+                       
+                           
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+   
+    <!-- Clients Aside -->
+   
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate="" action="mailto:Ksharper@studentmba.org" method="post"
+                    enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    Copyright ©Keshawn Sharper 
+                            
+ <a href="https://github.com/KeshawnSharper"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/keshawn-sharper-4678a3160/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Bookface</h2>
+                            <p class="item-intro text-muted">AngularJs/NodeJs</p>
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/626qvT9i17k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+ A social media app inspired by Facebook. After a user is registered and logged in they can easily view, comment and like posts from other users. Whenever a user wants to learn more about someone else or find them. All you have to do is search their name on the nav bar where you can see an extensive lists of users with similar names. You can view your profile or others. Users can then send  or accept friend requests and take advantage of the messaging system. Allowing users to inbox or message each other.</p>
+                            <p>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Angular Todo List</h2>
+                            <p class="item-intro text-mgted">AngularJs/NodeJs</p>
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/FTqnRnLdDUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+            The app is a simple todo list implemented through NgRx. Clients can sign up to view indivual todo lists. They can add and delete todos and be notified when a todo is past due.     
+                              </p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>African Marketplace</h2>
+                            <p class="item-intro text-muted">ReactJs.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hEBI4628_P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+                              
+    This is an store application where you can add,delete and view products from the marketplace after logging in.</p>
+                            <a href="https://africanmarketplacemock.netlify.app/"><button type="button" class="btn btn-primary" > 
+                              See Project
+                          </button>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Budget Blocks</h2>
+                            <p class="item-intro text-muted">ReactJs</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/18nXHRpX480" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>Budget Blocks is an application that allows clients to create a personalized budget based on their salary and transactions. You can either register manually which prompts users to add their expenses or simply have the app track your expenses through a bank account.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+<!--             <button class="close">
+                <div class="lr">
+                    <div class="rl">
+                    </div> -->
+                
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Refugee Stories</h2>
+                            <p class="item-intro text-muted">Html/Css/JavaScript</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/M4yl6ZXC3VY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>Refugee Stories is an application where you can read refugee stories once logged in. As a admin you can review stories  and either approve for the story to make it on the site or decline. As an  user you can submit stories for review. Both roles may view and read stories. </p>
+                            <a href="https://refugeestoriesbw.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Rick & Morty Fan Page</h2>
+                            <p class="item-intro text-muted">ReactJs</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2ByWt2fqdVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>The Rick & Morty Fan Page allows you to research episodes characers and locations from the hit series.</p>
+                            <a href="https://rickandmortyfanpage.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bookface</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+                            <p class="item-intro text-muted">AngularJs/NodeJs</p>
+                           <iframe width="100%" height="315" src="https://www.youtube.com/embed/626qvT9i17k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+ A social media app inspired by Facebook. After a user is registered and logged in they can easily view, comment and like posts from other users. Whenever a user wants to learn more about someone else or find them. All you have to do is search their name on the nav bar where you can see an extensive lists of users with similar names. You can view your profile or others. Users can then send  or accept friend requests and take advantage of the messaging system. Allowing users to inbox or message each other.</p>
+                            <p>
+                                
+                        </div>
+           
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Angular Todo List</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+                                  <p class="item-intro text-muted">AngularJs/NodeJs</p>
+                                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/FTqnRnLdDUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  <p>
+                                        The app is a simple todo list implemented through NgRx. Clients can sign up to view indivual todo lists. They can add and delete todos and be notified when a todo is past due.     
+                                        <p>
+                                      
+                              </div>
+                 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">African Marketplace</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                
+                                      <p class="item-intro text-muted">ReactJs</p>
+                                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/hEBI4628_P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+                              
+    This is an store application where you can add,delete and view products from the marketplace after logging in.</p>
+                            <a href="https://africanmarketplacemock.netlify.app/"><button type="button" class="btn btn-primary" > 
+                              See Project
+                          </button>
+                              </a>
+                                          
+                                  </div>
+                     
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Budget Blocks</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    
+                                          <p class="item-intro text-muted">ReactJs</p>
+                                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/18nXHRpX480" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                          <p>Budget Blocks is an application that allows clients to create a personalized budget based on their salary and transactions. You can either register manually which prompts users to add their expenses or simply have the app track your expenses through a bank account.</p>
+                                              
+                                      </div>
+                         
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Budget Blocks</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        
+                                              <p class="item-intro text-muted">ReactJs</p>
+                                              <iframe width="100%" height="315" src="https://www.youtube.com/embed/18nXHRpX480" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                              <p>Budget Blocks is an application that allows clients to create a personalized budget based on their salary and transactions. You can either register manually which prompts users to add their expenses or simply have the app track your expenses through a bank account.</p>
+                                                  
+                                          </div>
+                             
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Refugee Stories</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            
+                                                  <p class="item-intro text-muted">Html/Css/JavaScript</p>
+                                                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/M4yl6ZXC3VY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                  <p>Refugee Stories is an application where you can read refugee stories once logged in. As a admin you can review stories  and either approve for the story to make it on the site or decline. As an  user you can submit stories for review. Both roles may view and read stories. </p>
+                            <a href="https://refugeestoriesbw.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                             </a>
+                                              </div>
+                                 
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Rick & Morty Fan Page</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                        <p class="item-intro text-muted">ReactJs</p>
+                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/2ByWt2fqdVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <p>The Rick & Morty Fan Page allows you to research episodes characers and locations from the hit series.</p>
+                                        <a href="https://rickandmortyfanpage.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                                          </a>
+                                                  </div>
+                                     
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="modal fade" id="modal001" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">House of Houses</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        
+                                                <p class="item-intro text-muted">ReactJs</p>
+                                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/M_ohbwn_v04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <p>House of Houses is an application developed entirely through ReactJS using the Realtor API (Third party API). The app is functioned to search through a list of houses, receive specific data and photos and review the cost of ownership of a desired property.</p>
+                                                <a href="https://csb-m4br8.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                                                  </a>
+                                                          </div>
+                                             
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="modal fade" id="modal002" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Flappy Bird</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                
+                                                        <p class="item-intro text-muted">Flappy Bird</p>
+                                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/A7o5dxWjsNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        <p>Flappy bird is a clone application of the popular mobile game Flappy bird but built in JavaScript.</p>
+                                                        <a href="https://csb-m4br8.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                                                          </a>
+                                                                  </div>
+                                                     
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+                          </div>
+                          <div class="modal fade" id="modal0001" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Atlantic City</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                        <p class="item-intro text-muted">Html/Css/JavaScript</p>
+                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/DnBdHGChZkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <p>Atlantic City is a brochure application based on these city. It contains JavaScript features like smooth scrolling, water ripples and parallax. The site is also mobile responsive.</p>
+                                        <a href="https://atlanticcity.netlify.app/"><button type="button" class="btn btn-primary"> See Project</button>
+                                          </a>
+                                                  </div>
+                                     
+                                </div>
+                                
+                              </div>
+                            </div>
+          </div>
+ 
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
+
+    <script>
+
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        
+        });
+        
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top'
+        })
+        
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+        // $(".icon").click(function(){
+        //   if( $("nav ul").css("display") == "none" ){
+        //     $("nav ul").css("display", "block")
+        //   }
+        //   else{
+        //      $("nav ul").css("display", "none")
+        //   }
+          
+        // });
+        $(".nav-link").on("click", function () {
+            $(".nav-link").removeClass("nav-link-focus")
+  
+   var clickedBtnID = $(this)// or var clickedBtnID = this.id
+  clickedBtnID.addClass("nav-link-focus")
+  
+});
+        </script>
+        
+<span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body>
