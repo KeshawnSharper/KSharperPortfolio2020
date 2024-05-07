@@ -3,8 +3,11 @@
     <head>
         <title color="">Keshawn Sharper Portfolio</title>
         <link rel = "stylesheet" href = "index.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
         <meta name = "viewport" content="width = device-width,initial-scale=1.0">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- jQuery Version 1.11.0 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -30,7 +33,7 @@
 
     <!-- Navigation -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#" style="color:deepskyblue">Keshawn Sharper</a>
+  <a class="navbar-brand" href="#" style="color:gold">Keshawn Sharper</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,16 +41,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#services" style="color:deepskyblue;">Skills <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#services" style="color:gold;">Skills <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio" style="color:deepskyblue;">Projects <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#portfolio" style="color:gold;">Projects <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#about" style="color:deepskyblue;">About <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#about" style="color:gold;">About <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="#contact" style="color:deepskyblue;">Contact <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#certifications" style="color:gold;">Accomplishments <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#contact" style="color:gold;">Contact <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -57,7 +63,7 @@
 
 
     <!-- Header -->
-    <header>
+    <!-- <header>
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in" >Hello</div>
@@ -65,14 +71,26 @@
                 
             </div>
         </div>
-    </header>
+    </header> -->
+    <div class="home-header" id="home">
+      <!-- <img src="./cssicon.png"> -->
+        <video muted loop autoplay class="video-header">
+          <source src="header.mp4" type="video/mp4">
+        </video>
+        <div class="home-header-content">
+          <h3 style="font-size:3rem;"><b>WELCOME TO MY</b></h3>
+            <h3 style="font-size:3rem;"><b>PORTFOLIO</b></h3></b>
+    
+          <!-- <a href="tel:2672425887"><button>GET YOUR FREE QUOTE!!!</button></a> -->
+        </div>
+      </div>
    
     <!-- Services Section -->
     <section id="services" >
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading" style="black">Skills</h2>
+                        <h2 class="section-heading">Skills</h2>
                   
                     </div>
                 </div>
@@ -83,16 +101,20 @@
                                  />
                         </span>
                         <h4 class="service-heading">ReactJs (Redux)</h4>
-                        <p class="text-muted">ReactJs is an open-source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.</p>
-                    </div>
+                        <p class="text-muted">Years Of Experience : 5
+                          <br>
+                          Mastery : <span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:gray;">&starf;</span>
+                        </p>                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
     <!--                         <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
-                            <img src="data:image/png;base64,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"/>
+                            <img class="img" src="./wixicon.png"/>
                         </span>
-                        <h4 class="service-heading">AngularJs</h4>
-                        <p class="text-muted">AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications</p>
-                    </div>
+                        <h4 class="service-heading">WIX/Shopify</h4>
+                        <p class="text-muted">Years Of Experience : 2
+                          <br>
+                          Mastery : <span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:gray;">&starf;</span>
+                        </p>                          </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                           
@@ -100,11 +122,58 @@
     
                         </span>
                         <h4 class="service-heading">NodeJs</h4>
-                        <p class="text-muted">Node. js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.</p> 
-    
+                        <p class="text-muted">Years Of Experience : 5
+                          <br>
+                          Mastery : <span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:gray;">&starf;</span>
+                        </p>     
     <!--                   <h4 class="service-heading">Waterfall maybe?</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> --> 
                     </div>
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-4x">
+                        
+                          <img class="img" src="./SEO.svg"/>
+  
+                      </span>
+                      <h4 class="service-heading">SEO</h4>
+                      <p class="text-muted">Years Of Experience : 2
+                        <br>
+                        Mastery : <span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:gray;">&starf;</span>
+                      </p>  
+  
+  <!--                   <h4 class="service-heading">Waterfall maybe?</h4>
+                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> --> 
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                      
+                        <img class="img" src="./awsicon.png"/>
+
+                    </span>
+                    <h4 class="service-heading">AWS</h4>
+                    <p class="text-muted">Years Of Experience : 4
+                      <br>
+                      Mastery : <span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:gray;">&starf;</span>
+                    </p>  
+
+<!--                   <h4 class="service-heading">Waterfall maybe?</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> --> 
+                </div>
+                <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                    
+                      <img class="img" src="./cssicon.png"/>
+
+                  </span>
+                  <h4 class="service-heading">HTML/CSS/JS</h4>
+                  <p class="text-muted">Years Of Experience : 5
+                    <br>
+                    Mastery : <span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:yellow;">&starf;</span><span style="font-size:150%;color:gray;">&starf;</span>
+                  </p>  
+
+<!--                   <h4 class="service-heading">Waterfall maybe?</h4>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> --> 
+              </div>
                 </div>
                 
             </div>
@@ -123,50 +192,97 @@
             </div>
             <div class="row">
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                            <div id="project2" data-toggle="modal" data-target="#food_search">
+                            <div id="project2" data-toggle="modal" data-target="#cincinatti_drywall">
                                     <div class="portfolio-hover">
-                                    <img src="https://res.cloudinary.com/di449masi/image/upload/v1613399855/Screen_Shot_2021-02-15_at_9.36.25_AM_pju4f5.png" width="350" height="250"/>
-                            </div>
+                                      <video src="https://res.cloudinary.com/di449masi/video/upload/v1715005999/cincydrywall_nme9b9.mp4"
+                                              type="video/mp4" muted class="vid" 
+                                              loop width="350" height="100%"> 
+                                          </video>                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <h4>Food Search</h4>
-                            <p class="text-muted">Javascript/VueJs/Python/Django</p>
+                            <h4>Cincinatti Drywall</h4>
+                            <p class="text-muted">HTML/CSS/JS/SEO</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                            <div id="project2" data-toggle="modal" data-target="#pokemon">
-                                    <div class="portfolio-hover">
-                                    <img src="https://res.cloudinary.com/di449masi/image/upload/v1613685340/Screenshot_2021-02-18_at_4.55.16_PM_e2hl6t.png" width="350" height="250"/>
-                            </div>
+                      <div id="project2" data-toggle="modal" data-target="#shoe_shop">
+                              <div class="portfolio-hover">
+                                <video src="./shoeshop.mp4"
+                                        type="video/mp4" muted class="vid" 
+                                        loop width="350" height="100%"> 
+                                    </video>                             </div>
+                  </div>
+                  <div class="portfolio-caption">
+                      <h4>Heir Feet</h4>
+                      <p class="text-muted" style="font-size:14px">ReactJS/NodeJS(ExpressJS)/AWS(DynamoDB)</p>
+                  </div>
+              </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div id="project2" data-toggle="modal" data-target="#erie_flooring">
+                                      <div class="portfolio-hover">
+                                        <video src="https://res.cloudinary.com/di449masi/video/upload/v1715006086/eriepafloor_zukwwo.mp4"
+                                                type="video/mp4" muted class="vid" 
+                                                loop width="350" height="100%"> 
+                                            </video>                             </div>                          
                         </div>
                         <div class="portfolio-caption">
-                            <h4>Pokemon</h4>
-                            <p class="text-muted">CSS/ReactJs(Redux)/Python/Django</p>
+                            <h4>Erie Flooring</h4>
+                            <p class="text-muted" style="font-size:14px">WIX/SEO</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                            <div id="project2" data-toggle="modal" data-target="#vue_todo">
+                      <div id="project2" data-toggle="modal" data-target="#movie_app">
+                                <div class="portfolio-hover">
+                                  <video src="https://res.cloudinary.com/di449masi/video/upload/v1715007362/movie_app_yiguel.mp4"
+                                          type="video/mp4" muted class="vid" 
+                                          loop width="350" height="100%"> 
+                                      </video>                             </div>                          
+                  </div>
+                  <div class="portfolio-caption">
+                      <h4>Movie Application</h4>
+                      <p class="text-muted" style="font-size:10px">ReactJS/NodeJS(ExpressJS)/AWS(DynamoDB)</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="project2" data-toggle="modal" data-target="#elyria_tree">
+                          <div class="portfolio-hover">
+                            <video src="https://res.cloudinary.com/di449masi/video/upload/v1715007253/elyriaohtreeservice_w476en.mp4"
+                                    type="video/mp4" muted class="vid" 
+                                    loop width="350" height="100%"> 
+                                </video>                             </div>                          
+            </div>
+            <div class="portfolio-caption">
+                <h4>Elyria OH Tree Service</h4>
+                <p class="text-muted" style="font-size:10px">HTML/CSS/JS/SEO</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <div id="project2" data-toggle="modal" data-target="#pokemon">
+                    <div class="portfolio-hover">
+                      <video src="https://res.cloudinary.com/di449masi/video/upload/v1715007253/elyriaohtreeservice_w476en.mp4"
+                              type="video/mp4" muted class="vid" 
+                              loop width="350" height="100%"> 
+                          </video>                             </div>                          
+      </div>
+      <div class="portfolio-caption">
+          <h4>Pokemon</h4>
+          <p class="text-muted" style="font-size:10px">ReactJS/NodeJS(ExpressJS)/AWS(DynamoDB)</p>
+      </div>
+  </div>
+                    <!-- <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div id="project2" data-toggle="modal" data-target="#Erie_Flooring">
                                     <div class="portfolio-hover">
-                                    <img src="https://res.cloudinary.com/di449masi/image/upload/v1613701547/Screenshot_2021-02-18_at_9.24.53_PM_smjtoz.png" width="350" height="250"/>
-                            </div>
-                        </div>
-                        <div class="portfolio-caption">
-                            <h4>VueJS Todo List</h4>
-                            <p class="text-muted">CSS/VueJS/VueEx</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                            <div id="project2" data-toggle="modal" data-target="#modaldevdesk">
-                                    <div class="portfolio-hover">
-                                        <img src="https://res.cloudinary.com/di449masi/image/upload/v1608576859/Screenshot_2020-12-21_at_1.53.49_PM_iv2gwc.png" width="350" height="250"/>                            </div>
-                        </div>
+                                      <video src="./header.mp4"
+                                      type="video/mp4" muted class="vid" 
+                                      loop width="350" height="100%"> 
+                                  </video>                         </div>
                         <div class="portfolio-caption">
                             <h4>DevDesk Application</h4>
                             <p class="text-muted">NodeJs/Express/Jest</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                            <div id="project2" data-toggle="modal" data-target="#modalshop">
+                    </div></div> -->
+                    <!-- <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div id="project2" data-toggle="modal" data-target="shoe_shop">
                                     <div class="portfolio-hover">
                                     <img src="https://res.cloudinary.com/di449masi/image/upload/v1606248006/Screen_Shot_2020-11-24_at_2.59.13_PM_ntpsc2.png" width="350" height="250"/>
                             </div>
@@ -175,19 +291,21 @@
                             <h4>Heir Feet</h4>
                             <p class="text-muted">CSS/ReactJs(Redux)/NodeJs</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    </div> -->
+                    <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                             <div id="project2" data-toggle="modal" data-target="#modalmovie">
                                     <div class="portfolio-hover">
-                                    <img src="https://res.cloudinary.com/di449masi/image/upload/v1608580199/Screenshot_2020-12-21_at_2.49.33_PM_niwo8i.png" width="350" height="250"/>
-                            </div>
+                                      <video src="./shoeshop.mp4"
+                                      type="video/mp4" muted class="vid" 
+                                      loop width="350" height="100%"> 
+                                  </video>                                 </div>
                         </div>
                         <div class="portfolio-caption">
                             <h4>Movie Application</h4>
                             <p class="text-muted">CSS(SCSS)/ReactJs(Redux)/NodeJs</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    </div> -->
+                    <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                             <div id="project2" data-toggle="modal" data-target="#modal0001">
                                     <div class="portfolio-hover">
                                     <img src="./beach.png" width="350" height="250"/>
@@ -197,8 +315,8 @@
                             <h4>Atlantic City</h4>
                             <p class="text-muted">Html/Css/JavaScript</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    </div> -->
+                    <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                             <div id="project2" data-toggle="modal" data-target="#modal001">
                                     <div class="portfolio-hover">
                                     <img src="./HouseofHouses.png" width="350" height="250"/>
@@ -208,8 +326,8 @@
                             <h4>House of Houses</h4>
                             <p class="text-muted">ReactJs</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    </div> -->
+                    <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                             <div id="project2" data-toggle="modal" data-target="#modal002">
                                     <div class="portfolio-hover">
                                     <img src="./FlappyBird.png" width="350" height="250"/>
@@ -219,8 +337,8 @@
                             <h4>Flappy Bird</h4>
                             <p class="text-muted">ReactJs</p>
                         </div>
-                    </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                    </div> -->
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                         <div class="portfolio-hover">
                     <div id="project1" data-toggle="modal" data-target="#modal1">
                         
@@ -236,8 +354,8 @@
                         <h4>Bookface</h4>
                         <p class="text-muted">AngularJs/NodeJs</p>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                     <div id="project2" data-toggle="modal" data-target="#modal2">
                             <div class="portfolio-hover">
                             <img src="./AngularTodoList.png" width="350" height="250"/>
@@ -247,8 +365,8 @@
                         <h4>Angular Todo List</h4>
                         <p class="text-muted">AngularJs/NodeJs</p>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                         <div id="project2" data-toggle="modal" data-target="#modal3">
                                 <div class="portfolio-hover">
                                 <img src="./AfricanMarketplace.png" width="350" height="250"/>
@@ -258,8 +376,8 @@
                         <h4>African Marketplace</h4>
                         <p class="text-muted">ReactJs</p>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                         <div id="project2" data-toggle="modal" data-target="#modal4">
                                 <div class="portfolio-hover">
                                 <img src="./BudgetBlocks.png" width="350" height="250"/>
@@ -269,8 +387,8 @@
                         <h4>Budget Blocks</h4>
                         <p class="text-muted">ReactJs</p>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                         <div id="project2" data-toggle="modal" data-target="#modal5">
                                 <div class="portfolio-hover">
                                 <img src="./RefugeeStories.png" width="350" height="250"/>
@@ -280,8 +398,8 @@
                         <h4>Refugee Stories</h4>
                         <p class="text-muted">Html/Css/JavaScript</p>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                         <div id="project2" data-toggle="modal" data-target="#modal6">
                                 <div class="portfolio-hover">
                                 <img src="./RickMortyFanPage.png" width="350" height="250"/>
@@ -291,7 +409,7 @@
                         <h4>Rick & Morty Fan Page</h4>
                         <p class="text-muted">ReactJs</p>
                     </div>
-                </div>
+                </div> -->
              
             </div>
         </div>
@@ -299,6 +417,8 @@
     <section class="parallax">
 
     </section>
+
+
     <!-- About Section -->
     <section id="about">
         <div class="container">
@@ -313,7 +433,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/1.jpg" alt=""> -->
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -327,7 +447,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/2.jpg" alt=""> -->
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -341,7 +461,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -352,8 +472,51 @@
                                     <p class="text-muted">9-month program with an intense, fast-paced curriculum that teaches full-stack web development with an added emphasis on computer science fundamentals.</p>
                                 </div>
                             </div>
+
+                          
                         </li>
-                       
+                        <li class="timeline-inverted">
+                          <div class="timeline-image">
+                              <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
+                          </div>
+                          <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                  <h4>July 2021</h4>
+                                  <h4 class="subheading">Worked for Contenda</h4>
+                              </div>
+                              <div class="timeline-body">
+                                  <p class="text-muted">Contenda's artificial intelligence tools reimagine your content in new formats for your audience to discover, with no extra work from you. Scale your existing technical content faster!</p>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="timeline-image">
+                            <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2021</h4>
+                                <h4 class="subheading">Worked for TalentPath</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Talent Path is far more than a technology education platform or paid training provider. We bring together a detailed understanding of client business drivers and talent challenges with a robust recruiting ecosystem designed to attract top talent hungry for “last mile” training.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-image">
+                          <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
+                      </div>
+                      <div class="timeline-panel">
+                          <div class="timeline-heading">
+                              <h4>April 2022</h4>
+                              <h4 class="subheading">Worked for Nexient</h4>
+                          </div>
+                          <div class="timeline-body">
+                              <p class="text-muted">now part of NTT DATA, a global digital business and IT services leader - provides cost-effective software development consulting and software development services from our US-based innovation hubs in the Midwest and Silicon Valley.</p>
+                          </div>
+                      </div>
+                  </li>
                            
                        
                     </ul>
@@ -368,6 +531,25 @@
    
  <section class="parallax">
  </section>
+ <section id="certifications">
+  <h2>Accomplishments</h2>
+  <div class="slide-container">
+    <div class="carousel">
+      <div class="carousel__face"><a href="https://www.credly.com/earner/earned/badge/63b82695-74bd-423d-b0fa-44082614defb"><button>See My AWS Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href=" https://www.credly.com/badges/6bedbad5-0e23-4ade-a9f3-0244df2d9d1e?source=linked_in_profile"><button>See My Web Dev Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href=" https://www.credly.com/badges/6bedbad5-0e23-4ade-a9f3-0244df2d9d1e?source=linked_in_profile"><button>See My UDEMY SEO Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href="https://www.credly.com/earner/earned/badge/63b82695-74bd-423d-b0fa-44082614defb"><button>See My AWS Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href=" https://www.credly.com/badges/6bedbad5-0e23-4ade-a9f3-0244df2d9d1e?source=linked_in_profile"><button>See My Web Dev Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href=" https://www.credly.com/badges/6bedbad5-0e23-4ade-a9f3-0244df2d9d1e?source=linked_in_profile"><button>See My UDEMY SEO Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href="https://www.credly.com/earner/earned/badge/63b82695-74bd-423d-b0fa-44082614defb"><button>See My AWS Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href=" https://www.credly.com/badges/6bedbad5-0e23-4ade-a9f3-0244df2d9d1e?source=linked_in_profile"><button>See My Web Dev Cert HERE</button></a></span></div>
+      <div class="carousel__face"><a href=" https://www.credly.com/badges/6bedbad5-0e23-4ade-a9f3-0244df2d9d1e?source=linked_in_profile"><button>See My UDEMY SEO Cert HERE</button></a></span></div>
+    </div>
+  </div>
+
+  </section>
+  <section class="parallax">
+  </section>
 
     <footer id="contact">
         <div class="container">
@@ -703,23 +885,27 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="elyria_tree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">African Marketplace</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Elyria Tree Service</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                 
-                                      <p class="item-intro text-muted">ReactJs</p>
-                                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/hEBI4628_P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <p>
-                              
-    This is an store application where you can add,delete and view products from the marketplace after logging in.</p>
-                            <a href="https://africanmarketplacemock.netlify.app/"><button type="button" class="btn btn-primary" > 
+                                      <p class="item-intro text-muted">Elyria Tree Service</p>
+                                      <iframe width="100%" height="315" src="https://res.cloudinary.com/di449masi/video/upload/v1715007253/elyriaohtreeservice_w476en.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      <p>
+                                        Tools : SEO/HTML/JS/CSS
+                                        <br><br>
+                                        Created On: 3/12/2024
+                                        <br><br>
+                                        Page On Google : #3
+                                      </p>
+                            <a href="http://elyriaohtreeservice.site/"><button type="button" class="btn btn-primary" > 
                               See Project
                           </button>
                               </a>
@@ -1009,8 +1195,120 @@
       </div>
     </div>
 </div>
-
-
+<div class="modal fade" id="cincinatti_drywall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cincinatti Drywall</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+              <p class="item-intro text-muted">Cincinatti Drywall</p>
+              <iframe width="100%" height="315" src="https://res.cloudinary.com/di449masi/video/upload/v1715005999/cincydrywall_nme9b9.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>
+                Tools : SEO/HTML/JS/CSS
+                <br><br>
+                Created On: 2/12/2024
+                <br><br>
+                Page On Google : #1
+              </p>
+              <a href="https://cincinnatidrywall.co"><button type="button" class="btn btn-primary"> See Project</button>
+                </a>
+                        </div>
+           
+      </div>
+      
+    </div>
+  </div>
+  <div class="modal fade" id="erie_flooring" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Erie Flooring</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+                <p class="item-intro text-muted">Erie Flooring</p>
+                <iframe width="100%" height="315" src="https://res.cloudinary.com/di449masi/video/upload/v1715006086/eriepafloor_zukwwo.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                  Tools : SEO/HTML/JS/CSS
+                  <br><br>
+                  Created On: 1/1/2024
+                  <br><br>
+                  Page On Google : #1
+                </p>
+                <a href="https://eriepaflooring.com"><button type="button" class="btn btn-primary"> See Project</button>
+                  </a>
+                          </div>
+             
+        </div>
+        
+      </div>
+    </div>
+  <div class="modal fade" id="shoe_shop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sneaker Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+                <p class="item-intro text-muted">Sneaker Store</p>
+                <iframe width="100%" height="315" src="./shoeshop.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                  Tools : ReactJS/NodeJS(ExpressJS)/AWS(DynamoDB)
+                  <br>
+                  Created On: 2/1/2022
+                  <br>
+                  Page On Google : N/A(Just a practice project)
+                  <br>
+                  PLEASE USE THE DUMMY DATA PROVIDED FROM ALARMS ON THE PROJECT (nothing happens if you provide your own info but you should never enter sensitive data on demo sites)
+                </p>
+                <a href="https://shoestore-kappa.vercel.app/signup"><button type="button" class="btn btn-primary"> See Project</button>
+                  </a>
+                          </div>
+             
+        </div>
+        
+      </div>
+    </div>
+    <div class="modal fade" id="pokemon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pokemon</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          
+                  <p class="item-intro text-muted">Pokemon</p>
+                  <iframe width="100%" height="315" src="https://res.cloudinary.com/di449masi/video/upload/v1715005999/cincydrywall_nme9b9.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p>
+                    Tools : React/AWS Lambda/AWS Gateway/AWS Amplify
+                    <br><br>
+                    Created On: 2/12/2024
+                    <br><br>
+                    Page On Google : (Dev Project)
+                  </p>
+                  <a href="https://dev.d3vuow239xnvr5.amplifyapp.com/home"><button type="button" class="btn btn-primary"> See Project</button>
+                    </a>
+                            </div>
+               
+          </div>
+          
+        </div>
+      </div>
 </div>
 
 </div>
@@ -1050,7 +1348,28 @@
     <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
 
     <script>
+//  // Targeting video element  
+//  let clips = document.querySelectorAll(".vid") 
+  
+//   /* Applying mouseover event on video clip  
+//   and then we call play() function to play  
+//   the video when the mouse is over the video */ 
+//   clips.forEach(clip => {
+//     clip.addEventListener("mouseover", function (e) { 
+//       clip.play(); 
+//   }) 
+//   clip.addEventListener("mouseout", function (e) { 
+//       clip.pause(); 
+//   }) 
+// })
 
+  /* Applying mouseout event on video clip  
+  and then we call pause() function to stop  
+  the video when the mouse is out the video */ 
+
+  // clip.addEventListener("mouseout", function (e) { 
+  //     clip.pause(); 
+  // }) 
         $(function() {
             $('a.page-scroll').bind('click', function(event) {
                 var $anchor = $(this);
@@ -1083,10 +1402,38 @@
         $(".nav-link").on("click", function () {
             $(".nav-link").removeClass("nav-link-focus")
   
-   var clickedBtnID = $(this)// or var clickedBtnID = this.id
-  clickedBtnID.addClass("nav-link-focus")
+  //  var clickedBtnID = $(this)// or var clickedBtnID = this.id
+  // clickedBtnID.addClass("nav-link-focus")
   
 });
+var slideIndex = 1
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
         </script>
         
 <span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body>
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
